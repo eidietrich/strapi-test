@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lawsuits",
+  "info": {
+    "singularName": "lawsuit",
+    "pluralName": "lawsuits",
+    "displayName": "Lawsuits",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Plaintiffs": {
+      "type": "string"
+    },
+    "Defendants": {
+      "type": "string"
+    },
+    "filings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::filing.filing",
+      "mappedBy": "lawsuit"
+    },
+    "Number": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
