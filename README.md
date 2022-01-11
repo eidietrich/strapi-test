@@ -1,3 +1,3 @@
-# Strapi application
+# Strapi test
 
-A quick description of your strapi application
+Attempt to get a Strapi demo working in production
